@@ -1,0 +1,131 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s ease;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgb(90, 127, 113);
+  color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+nav img {
+  width: 50px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e67e22;
+}
+
+main {
+  padding: 20px;
+  transition: padding 0.3s ease;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  transition: margin-bottom 0.3s ease;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+  background-color: rgb(185, 199, 194);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: rgb(90, 127, 113);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.country-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ecf0f1;
+  box-shadow: 10px 10px 15px rgba(210, 84, 84, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgb(181, 191, 144);
+  color: black;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(90, 127, 113);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    margin-bottom: 10px;
+  }
+}
